@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat Alternates;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 237, 240);
+}
+
+.montserrat-alternates-bold {
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+.miniWindow {
+    width: 350px;
+    height: 400px;
+    background-color: rgb(255, 198, 206);
+    padding: 2rem;
+    border-radius: 10px;
+    border-color: #ee6d98;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topBar {
+    background-color: #ffe8e8;
+    max-width: 50%;
+    height: 2rem;
+    border-radius: 7px;
+    color: #ee6d98;
+    padding: 10px;
+}
+
+.topText {
+    margin: 20px;
+    display: flex;
+}
+
+.kitty {
+    height: 150px;
+}
+
+h2 {
+    color: white;
+    background-color: #ee6d9841;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.mainQuizField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 20%; 
+    line-height: 50px;
+}
+
+.question {
+    color: white;
+    background-color: #ee6d9862;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+button {
+    background-color: #ffe8e8;
+    outline: #ee6d98;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #ee6d98;
+}
+
+#whenDone {
+    margin-top: 20px;
+    background-color: #ffc1d6;
+}
+
+.letterBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #ee6d98;
+    font-family: "Montserrat Alternates", sans-serif;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
